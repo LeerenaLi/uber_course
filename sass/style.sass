@@ -1,3 +1,6 @@
+$color_blue: #1EACC7
+$color_pink: #FF5656
+    
 *
     font-family: 'Roboto', sans-serif
 
@@ -184,13 +187,13 @@ nav
             align-items: center
             width: 116px
             height: 116px
-            background: #1EACC7
+            background: $color_blue
             border-radius: 100%
             margin-right: 25px
 
         .reasons_descr
             .reasons_subtitle
-                color: #1EACC7
+                color: $color_blue
                 font-weight: 400
                 font-size: 17px
                 line-height: 21px
@@ -247,6 +250,28 @@ nav
             background: #000000
             border-radius: 100%
             cursor: pointer
+
+.option
+    min-height: 898px
+    padding: 54px 0 137px 0
+    background: url('../img/fon_choice.jpg') center center/cover no-repeat
+    .label
+        background: #FFFFFF
+        color: #070716
+    .title
+        color: #FFFFFF
+    .subtitle
+        color: #FFFFFF
+    &_auto
+        display: flex
+        justify-content: center
+        margin-top: 54px
+    &_text
+        color: #222222
+        font-weight: 300
+        font-size: 17px
+        line-height: 24px
+        text-align: center
 
 
 
