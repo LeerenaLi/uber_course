@@ -9,6 +9,9 @@ nav
     width: 100%
     z-index: 2
 
+.hamburger
+    display: none
+
 .menu
     display: flex
     justify-content: space-between
@@ -22,7 +25,6 @@ nav
     &_item
         border-right: 2px dotted #000
         padding-right: 28px
-
         &:nth-child(6)
             border-right: none
 
@@ -75,7 +77,6 @@ nav
         +btn_hover
 
 .promo
-    min-height: 800px
     background: url('../img/fon.jpg') center (center / cover) no-repeat
     padding: 150px 0 135px 0
     &_header
@@ -163,9 +164,8 @@ nav
     padding: 20px 0 64px 0
     &_block
         display: flex
-        display: flex
         justify-content: center
-        align-items: center
+        align-items: flex-start
         margin-top: 16px
         margin-bottom: 15px
     &_descr
@@ -178,7 +178,7 @@ nav
         height: 116px
         background: $color_blue
         border-radius: 100%
-        margin-right: 25px
+        margin: 10px 25px 0 0
     &_subtitle
         color: $color_blue
         font-weight: 400
@@ -192,7 +192,6 @@ nav
         margin-top: 5px
 
 .mobile
-    min-height: 864px
     padding: 46px 0 80px 0
     background: url('../img/fon_mob.jpg') center center/cover no-repeat
     .row
@@ -259,7 +258,6 @@ nav
                 
 
 .option
-    min-height: 898px
     padding: 54px 0 137px 0
     background: url('../img/fon_choice.jpg') center center/cover no-repeat
     &_auto
@@ -404,3 +402,5 @@ footer
         img
             width: 100px
             margin-left: 8px
+.xs-visible
+        display: none
